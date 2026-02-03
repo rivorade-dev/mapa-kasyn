@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<title>Kasyna w Polsce – aktywne koncesje (MF 21.10.2025)</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<style>
+body { margin:0; font-family: Arial, sans-serif; }
+#map { height:100vh; }
+.legend {
+  background:white;
+  padding:10px;
+  font-size:14px;
+  line-height:1.4;
+}
+</style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const data = {
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"city":"Gdańsk"},"geometry":{"type":"Point","coordinates":[18.6466,54.3520]}},
+    {"type":"Feature","properties":{"city":"Koszalin"},"geometry":{"type":"Point","coordinates":[16.1722,54.1944]}},
+    {"type":"Feature","properties":{"city":"Warszawa"},"geometry":{"type":"Point","coordinates":[21.0122,52.2297]}},
+    {"type":"Feature","properties":{"city":"Bydgoszcz"},"geometry":{"type":"Point","coordinates":[18.0084,53.1235]}},
+    {"type":"Feature","properties":{"city":"Toruń"},"geometry":{"type":"Point","coordinates":[18.5984,53.0138]}},
+    {"type":"Feature","properties":{"city":"Opole"},"geometry":{"type":"Point","coordinates":[17.9213,50.6751]}},
+    {"type":"Feature","properties":{"city":"Elbląg"},"geometry":{"type":"Point","coordinates":[19.4040,54.1522]}},
+    {"type":"Feature","properties":{"city":"Olsztyn"},"geometry":{"type":"Point","coordinates":[20.4801,53.7784]}},
+    {"type":"Feature","properties":{"city":"Tarnów"},"geometry":{"type":"Point","coordinates":[20.9869,50.0138]}},
+    {"type":"Feature","properties":{"city":"Lublin"},"geometry":{"type":"Point","coordinates":[22.5684,51.2465]}},
+    {"type":"Feature","properties":{"city":"Katowice"},"geometry":{"type":"Point","coordinates":[19.0238,50.2649]}},
+    {"type":"Feature","properties":{"city":"Kielce"},"geometry":{"type":"Point","coordinates":[20.6286,50.8661]}},
+    {"type":"Feature","properties":{"city":"Rzeszów"},"geometry":{"type":"Point","coordinates":[21.9990,50.0413]}},
+    {"type":"Feature","properties":{"city":"Sopot"},"geometry":{"type":"Point","coordinates":[18.5601,54.4416]}},
+    {"type":"Feature","properties":{"city":"Białystok"},"geometry":{"type":"Point","coordinates":[23.1688,53.1325]}},
+    {"type":"Feature","properties":{"city":"Szczecin"},"geometry":{"type":"Point","coordinates":[14.5528,53.4285]}},
+    {"type":"Feature","properties":{"city":"Tarnobrzeg"},"geometry":{"type":"Point","coordinates":[21.6790,50.5730]}},
+    {"type":"Feature","properties":{"city":"Stalowa Wola"},"geometry":{"type":"Point","coordinates":[22.0533,50.5829]}},
+    {"type":"Feature","pr
